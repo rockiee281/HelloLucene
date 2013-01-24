@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>HelloLucene</groupId>
+  <artifactId>HelloLucene</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+   	<dependency>
+	<groupId>org.apache.lucene</groupId>
+	<artifactId>lucene-core</artifactId>
+	<version>4.0.0</version>
+	</dependency>
+   	<dependency>
+   		<groupId>mmseg4j</groupId>
+   		<artifactId>core</artifactId>
+   		<version>1.9.1</version>
+   		 <scope>system</scope>  
+   		 <!--本地jar的路径-->  
+        <systemPath>${project.basedir}/lib/mmseg4j-core-1.9.1-SNAPSHOT.jar</systemPath>  
+   	</dependency>
+   	<dependency>
+   		<groupId>mmseg4j</groupId>
+   		<artifactId>analysis</artifactId>
+   		<version>1.9.1</version>
+   		 <scope>system</scope>  
+   		 <!--本地jar的路径-->  
+        <systemPath>${project.basedir}/lib/mmseg4j-analysis-1.9.1-SNAPSHOT.jar</systemPath>  
+   	</dependency>
+   	
+  </dependencies>
+</project>
