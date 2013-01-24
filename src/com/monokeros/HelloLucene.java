@@ -26,7 +26,7 @@ public class HelloLucene {
   }
   
   /**
-   * 创建索引
+   * 鍒涘缓绱㈠紩
    * */
   public void createDemoIndex(String pathname) throws Exception{
     Directory d = FSDirectory.open(new File(pathname));
@@ -39,12 +39,12 @@ public class HelloLucene {
     fieldType.setStored(true);
     
     Document doc = new Document();
-    doc.add(new Field("name", "张三", fieldType));
+    doc.add(new Field("name", "寮犱笁", fieldType));
     doc.add(new Field("id", "0", fieldType));
     writer.addDocument(doc);
     
     doc = new Document();
-    doc.add(new Field("name", "李四", fieldType));
+    doc.add(new Field("name", "鏉庡洓", fieldType));
     doc.add(new Field("id", "1", fieldType));
     writer.addDocument(doc);
     
